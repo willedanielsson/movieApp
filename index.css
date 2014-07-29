@@ -1,0 +1,84 @@
+.pagecontent{
+	background-color: white;
+	height: 700px;
+}
+
+.information{
+	display: inline-block;
+	float: left;
+	width: 480px;
+	margin: 50px 50px 0 50px;
+}
+
+.information_text{
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 29px;
+	word-spacing: -1px;
+}
+
+.information_image{
+	margin: 50px 0 0 40px;
+}
+
+.information_list{
+	margin-top: 50px;
+}
+
+.register{
+	display: inline-block;
+	float: right;
+	width: 390px;
+	margin: 150px 3px 3px 3px;
+}
+
+.register h1,h2{
+	margin-left: 12px;
+}
+
+.register h1{
+	font-size: 36px;
+}
+
+.register h2{
+	font-weight: lighter;
+}
+
+#registerForm input{
+	display: block;
+	margin: 10px 0 0 12px;
+	height: 30px;
+	width: 320px;
+
+	font-size: 18px;
+	border-radius: 5px;
+    border: 1px solid #0f71ba;
+    padding: 8px 10px;
+}
+
+#registerForm #registerSubmit{
+	width: 100px;
+	height: 48px;
+	border: 0 none;
+	border-radius: 5px;
+
+	font-size: 20px;
+	color: #eeeeee;
+
+	background: #0f71ba;
+    background: -webkit-linear-gradient(#3fa4f0 0%, #0f71ba 100%);
+    background: -o-linear-gradient(#3fa4f0 0%, #0f71ba 100%);
+    background: linear-gradient(#3fa4f0 0%, #0f71ba 100%);
+
+	cursor: pointer;
+	-webkit-transition: all 150ms ease;
+	transition: all 150ms ease;
+}
+
+#registerForm #registerSubmit:active{
+	-webkit-transform: translateY(-3px);
+	transform: translateY(-3px);
+	-webkit-animation: none;
+	animation: none;
+	color: #ffffff;
+}

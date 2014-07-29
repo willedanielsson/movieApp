@@ -32,11 +32,10 @@
 				</button>
 
 				<div id="loginPop">
-					<h1>Login</h1>
 						<form id="loginForm" action="login.php" method="get" accept-charset="UTF-8">
-							<input type="email" name="email" id="email" maxlength="50" />
-							<input type="password" name="password" id="password" maxlength="50" />
-							<input type="submit" name="Submit" value="Login" id="submit"/>
+							<input type="email" name="email" id="email" maxlength="50" placeholder="Email"/>
+							<input type="password" name="password" id="password" maxlength="50" placeholder="Password"/>
+							<input type="submit" name="Submit" value="Login" id="loginSubmit"/>
 						</form>
 				</div>
 

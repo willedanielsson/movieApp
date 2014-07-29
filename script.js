@@ -4,10 +4,10 @@ $(document).ready(function() {
 
 function toggleVisibility(id){
 	var e = document.getElementById(id);
-	if(e.style.display == 'block'){
-		e.style.display = 'none';
+	if(e.style.top == '97px'){
+		e.style.top = '-2000px';
 	}else{
-		e.style.display = 'block';
+		e.style.top = '97px';
 	}
 }
 

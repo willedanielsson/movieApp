@@ -1,7 +1,7 @@
 *{
 	padding: 0;
 	margin:0;
-	font-family: Capriola, Helvetica, sans-serif;
+	font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
 }
 
 html{
@@ -170,7 +170,6 @@ header nav ul li.active > a {
 	border-left: 1px solid #eeeeee;
 	top: 15px;
 	height: 70px;
-
 }
 
 #navigationMember button{
@@ -196,24 +195,27 @@ header nav ul li.active > a {
     border: 0 none;
 	border-radius: 3px;
 	cursor: pointer;
+	/*
 	-webkit-transition: all 150ms ease;
 	transition: all 150ms ease;
+	*/
 }
 
 #navigationMember button:active{
-
+	/*
 	-webkit-transform: translateY(-3px);
 	transform: translateY(-3px);
 	-webkit-animation: none;
 	animation: none;
+	*/
 	color: #ffffff;
 }
 
 #loginPop{
-	display: none;
-	height: 177px;
-	z-index: 8;
-	margin-top: 97px;
+	position: absolute;
+	height: 148px;
+	width: 250px;
+	top: 97px;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
 
@@ -227,44 +229,38 @@ header nav ul li.active > a {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e0e0e', endColorstr='#7d7e7d',GradientType=0 ); /* IE6-9 */
 }
 
-#loginPop h1{
-	color: #eeeeee;
-	float: left;
-	font-size: 30px;
-	padding-top: 6px;
-	margin-left: 12px;
-	margin-bottom: 10px;
-}
-
 #loginPop input{
 	display: block;
 	margin: 10px 0 0 12px;
 	height: 30px;
 	width: 220px;
-	font-size: 20px;
+
+	font-size: 15px;
+	border-radius: 3px;
+	border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgba(345, 0, 0, 0);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
 }
 
 #loginPop #email{
-
+	margin-top: 20px;
 }
 
 #loginPop #password{
 }
 
-#loginPop #submit{
+#loginPop #loginSubmit{
 	width: 80px;
 	height: 30px;
 
-	font-family: Capriola, Helvetica, sans-serif;
+	font-size: 20px;
 	color: #eeeeee;
 
 	background: #0f71ba;
-  background: -moz-linear-gradient(top, #3fa4f0 0%, #0f71ba 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3fa4f0), color-stop(100%, #0f71ba));
-  background: -webkit-linear-gradient(top, #3fa4f0 0%, #0f71ba 100%);
-  background: -o-linear-gradient(top, #3fa4f0 0%, #0f71ba 100%);
-  background: -ms-linear-gradient(top, #3fa4f0 0%, #0f71ba 100%);
-  background: linear-gradient(to bottom, #3fa4f0 0%, #0f71ba 100%);
+    background: -webkit-linear-gradient(#3fa4f0 0%, #0f71ba 100%);
+    background: -o-linear-gradient(#3fa4f0 0%, #0f71ba 100%);
+    background: linear-gradient(#3fa4f0 0%, #0f71ba 100%);
 
   	border: 0 none;
 	border-radius: 3px;
@@ -273,18 +269,11 @@ header nav ul li.active > a {
 	transition: all 150ms ease;
 }
 
-#loginPop #submit:active{
-
+#loginPop #loginSubmit:active{
 	-webkit-transform: translateY(-3px);
 	transform: translateY(-3px);
 	-webkit-animation: none;
 	animation: none;
 	color: #ffffff;
-}
-
-
-.pagecontent{
-	background-color: white;
-	height: 700px;
 }
 
