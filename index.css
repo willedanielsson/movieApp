@@ -1,6 +1,6 @@
 .pagecontent{
-	background-color: white;
-	height: 700px;
+	background-color: #fcfcfc;
+	
 }
 
 .information{
@@ -17,12 +17,29 @@
 	word-spacing: -1px;
 }
 
-.information_image{
-	margin: 50px 0 0 40px;
-}
 
 .information_list{
+	position: relative;	
 	margin-top: 50px;
+}
+
+.information_list .fa{
+	font-size: 60px;
+	margin-right: 20px;
+	color: #0f71ba;
+}
+
+.information_list .information_list_headline{
+	position: absolute;
+	top: 0px;
+	font-weight: bold;
+
+	font-size: 30px;
+}
+
+.information_list .information_list_text{
+	position: absolute;
+	top: 36px;
 }
 
 .register{
@@ -41,7 +58,7 @@
 }
 
 .register h2{
-	font-weight: lighter;
+	font-weight: lighter;	
 }
 
 #registerForm input{
@@ -81,4 +98,33 @@
 	-webkit-animation: none;
 	animation: none;
 	color: #ffffff;
+}
+
+.pagecontent .pagecontent_news{
+	display: inline-block;
+	width: 100%;
+	margin-top: 40px;
+
+}
+
+.pagecontent .pagecontent_news .pagecontent_news_holder{
+
+	width: 600px;
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+
+	text-align: center;
+
+	border-top: 1px solid black;
+}
+
+.pagecontent .pagecontent_news .pagecontent_news_holder .fa{
+	display: inline;
+	font-size: 100px;
+}
+
+.pagecontent .pagecontent_news .pagecontent_news_holder span{
+	display: inline;
+	font-size: 30px;
 }

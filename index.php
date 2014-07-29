@@ -13,19 +13,19 @@
 				</div>
 
 				<div class="information_list">
-					<img src="">
+					<span class="fa fa-user"></span>
 					<span class="information_list_headline">Become a member</span>
 					<span class="information_list_text">in a matter of seconds</span>
 				</div>
 
 				<div class="information_list">
-					<img src="">
+					<span class="fa fa-filter"></span>
 					<span class="information_list_headline">Filter your perfect top list</span>
 					<span class="information_list_text">from IMDb's movie lists</span>
 				</div>
 
 				<div class="information_list">
-					<img src="">
+					<span class="fa fa-check"></span>
 					<span class="information_list_headline">Start checking off</span>
 					<span class="information_list_text">and always know what to watch</span>
 				</div>
@@ -41,30 +41,18 @@
 						<input type="submit" name="Submit" value="Register" id="registerSubmit" />
 				</form>
 			</div>
+
+			<div class="pagecontent_news">
+			<div class="pagecontent_news_holder">
+			<h1>What's new?</h1>
+				<span class="fa fa-filter"></span>
+				<span>MyMovieList is being developed for Android and iOS</span>
+				</div>
+			</div>
+
 		</div>
+
 	</div>
-<!--
-	<h1>SIGNUP</h1>
-	<form id="register" action="register.php" method="get" accept-charset="UTF-8">
-		<input type="email" name="email" id="email" maxlength="50" />
-
-		<input type="password" name="password" id="password" maxlength="50" />
-
-		<input type="submit" name="Submit" value="Submit" />
-
-	</form>
-
-	<h1>LOGIN</h1>
-	<form id="login" action="login.php" method="get" accept-charset="UTF-8">
-		<input type="email" name="email" id="email" maxlength="50" />
-
-		<input type="password" name="password" id="password" maxlength="50" />
-
-		<input type="submit" name="Submit" value="Submit" />
-
-	</form>
-
--->
 
 </body>
 

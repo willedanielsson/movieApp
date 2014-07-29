@@ -5,9 +5,9 @@
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="header.css">
 	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
- 	<script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
   	<script src="script.js"></script>
-</head>
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>	
 
 <body>
 	<div class="content">
@@ -25,8 +25,7 @@
 			</nav>
 
 			<div id="navigationMember">
-			<div id="apa">
-			</div>
+			<div id="apa"></div>
 				<button id="popButtonOpener" onclick="toggleVisibility('loginPop')">
 					Login
 				</button>
