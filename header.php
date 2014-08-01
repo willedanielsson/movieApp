@@ -14,7 +14,7 @@
 		<header>
 		<div class="logo">
 			<img src="images/logo.png" height="100px" width="200px">
-			<div id="unDiv"></div>
+			<div id="logoRightDiv"></div>
 		</div>
 			<nav id="navigationMenu">
 				<ul>
@@ -25,19 +25,19 @@
 			</nav>
 
 			<div id="navigationMember">
-			<div id="apa"></div>
-				<button id="popButtonOpener" onclick="toggleVisibility('loginPop')">
-					Login
+				<div id="navRightBorder"></div>
+
+				<span id="memberSpan">
+					<?php echo($_SESSION['userEmail']);?>
+				</span>
+				<button id="logoutButton">
+					Logout
 				</button>
 
-				<div id="loginPop">
-						<form id="loginForm" action="login.php" method="get" accept-charset="UTF-8">
-							<input type="email" name="email" id="email" maxlength="50" placeholder="Email"/>
-							<input type="password" name="password" id="password" maxlength="50" placeholder="Password"/>
-							<input type="submit" name="Submit" value="Login" id="loginSubmit"/>
-						</form>
-				</div>
-
+				<button id="myListButton">
+					Watched
+				</button>
+				
 			</div>
 
 		</header>

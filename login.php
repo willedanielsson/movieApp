@@ -5,14 +5,15 @@ require("PasswordHash.php");
 if($_GET["email"] && $_GET["password"]){
 
 	$servername ="localhost";
-	$username = "root";
-	$password = "";
-	$connect = mysqli_connect($servername, $username, $password, "members");
+	$serverUsername = "root";
+	$serverPassword = "";
+	$connect = mysqli_connect($servername, $serverUsername, $serverPassword, "members");
 
 	$userPassword = $_GET["password"];
+	$userEmail = $_GET["email"];
 	$hasher = new PasswordHash(8, false);
 
-	$findUser = "SELECT password FROM users WHERE email='$_GET[email]'";
+	$findUser = "SELECT password FROM users WHERE email='$userEmail'";
 	if($result = mysqli_query($connect, $findUser)){
 
 		$row = $result->fetch_row();
@@ -22,7 +23,10 @@ if($_GET["email"] && $_GET["password"]){
 	$check = $hasher->CheckPassword($userPassword, $storedHash);
 
 	if($check){
-		header("Location: main.php");
+		session_start();
+		$_SESSION['userEmail'] = $userEmail;
+
+		header("Location: movies.php");
 	}else{
 		print("Passwords didnt match");
 	}

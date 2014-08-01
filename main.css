@@ -1,16 +1,6 @@
-body{
-	
-}
-
-.left{
-	width: 10%;
-	height: 500px;
-	float: left;
-
-}
-
 .movieContent{
-	float: left;
+	background-color: #fcfcfc;
+
 }
 
 .movieContent ul{
@@ -18,8 +8,12 @@ body{
 }
 
 .movieContent li{
+	
+	margin-bottom: 10px;
 	padding: 10px;
 	overflow: auto;
+
+	border: 1px solid black;
 }
 
 .movieContent li img{

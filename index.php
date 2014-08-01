@@ -1,4 +1,4 @@
-<?php include_once "header.php"; ?>
+<?php include_once "header2.php"; ?>
 <link rel="stylesheet" type="text/css" href="index.css">
 <!--
 <body>
