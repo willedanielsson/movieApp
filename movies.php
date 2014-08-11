@@ -14,23 +14,45 @@ if(!isset($_SESSION["userEmail"])){
 		<div class="movieContent">
 			<ul>
 				<?php
-				include("imdbHax.php");
-					$i = new Imdb();
-					$mArr = $i->getTop250();
+				require ("class_IMDB.php");
+					$i = new Imdb(true);
+					$mArr = $i->chart_top();
 					// DEVELOP: Only grab the first ten
 					$output = array_slice($mArr, 0, 10);?>
 					<?php foreach ($output as $value):
-					print_r($value)
-					?>
+
+						$movieTitle = $value->title;
+						$movieRating = $value->rating;
+						$movieImage = $value->image->url;
+						$movieYear = $value->year;
+						$movieId = $value->tconst;
+							?>
 
 						<li>
-							<h3><?php print_r(array_values($value)[1])?></h3>
-							<img src="http://lorempixum.com/100/100/nature/1">	
-							<h3><?php print_r(array_values($value)[2])?></h3>
-							<p>HUehuehueheu</p>
+							
+							<img class="movieListImage" src="<?php echo $movieImage;?>">
+							<div class="movieListTitle">
+								<h3><?php print_r($movieTitle)?></h3>
+							</div>
+							<div class="movieListRandY">
+								<div class="movieListRating">
+									<span><?php print_r($movieRating)?></span>
+								</div>
+								
+								<p><?php print_r($movieYear)?></p>
+								<a href="http://www.imdb.com/title/<?php echo $movieId;?>" target="_blank">Read more</a>
+							</div>
+							<button onclick="#"><span class="fa fa-eye"></span></button>
 						</li>
-					<?php endforeach; ?>			
+
+					<?php endforeach; ?>
 			</ul>
+			
+			<div class="movieFilter">
+				<h1>Filter</h1>
+
+			</div>
+
 		</div>
 	</div>
 </body>

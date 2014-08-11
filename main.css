@@ -1,22 +1,51 @@
 .movieContent{
 	background-color: #fcfcfc;
-
 }
 
 .movieContent ul{
 	list-style-type: none;
+	display: inline-block;
+	width: 720px;
+	margin-top: 20px;
 }
 
 .movieContent li{
-	
 	margin-bottom: 10px;
 	padding: 10px;
 	overflow: auto;
+	z-index: -2;
 
 	border: 1px solid black;
 }
 
-.movieContent li img{
+.movieContent li .movieListImage{
+	height: 100px;
+	width: 70px;
 	float: left;
 	margin: 0 15px 0 0;
+}
+
+.movieContent li .movieListTitle{
+	display: inline-block;
+}
+
+.movieContent li .movieListRandY{
+	display: inline-block;
+}
+
+.movieContent li .movieListRandY .movieListRating{
+	background-image: url(../star.png);
+
+}
+
+.movieContent .movieFilter{
+	height: 500px;
+
+	width: 250px;
+	float: right;
+	display: inline-block;
+	margin-top: 20px;
+	margin-right: 10px; 
+
+	border: 1px solid black;
 }
