@@ -4,10 +4,7 @@ require("PasswordHash.php");
 
 if($_GET["email"] && $_GET["password"]){
 
-	$servername ="localhost";
-	$serverUsername = "root";
-	$serverPassword = "";
-	$connect = mysqli_connect($servername, $serverUsername, $serverPassword, "members");
+ require('connector.php');
 
 	$userPassword = $_GET["password"];
 	$userEmail = $_GET["email"];
@@ -26,7 +23,7 @@ if($_GET["email"] && $_GET["password"]){
 		session_start();
 		$_SESSION['userEmail'] = $userEmail;
 
-		header("Location: movies.php");
+		header("Location: home.php");
 	}else{
 		print("Passwords didnt match");
 	}

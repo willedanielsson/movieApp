@@ -10,10 +10,7 @@ require("PasswordHash.php");
 
 if($_GET["email"] && $_GET["password"]){
 
-	$servername ="localhost";
-	$username = "root";
-	$password = "";
-	$connect = mysqli_connect($servername, $username, $password, "members");
+	require('connector.php');
 
 	$alreadyAMember = ("SELECT * FROM users WHERE email='$_GET[email]'");
 
@@ -37,10 +34,14 @@ if($_GET["email"] && $_GET["password"]){
 			//Creates a hash of 60 letters
 			$hash = $hasher->HashPassword($userPassword);
 
+			//Create user
 			$sql = ("INSERT INTO users (email,password) VALUES ('$_GET[email]', '$hash')");
 			$result = mysqli_query($connect, $sql);
 
-			header('Location: main.php');
+			// Get user id
+			$getUserId = ("SELECT id FROM `users` WHERE email='test@test.com'");
+
+			header('Location: movies.php');
 			}
 
 	}

@@ -7,6 +7,7 @@
 	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
   	<script src="script.js"></script>
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>	
 
 <body>
@@ -18,9 +19,9 @@
 		</div>
 			<nav id="navigationMenu">
 				<ul>
-					<li class="active"><a href="#"><span>Home</span></a></li>
-					<li><a href="#"><span>Movies</span></a></li>
-					<li><a href="#"><span>Series</span></a></li>
+					<li><a href="home.php"><span>Home</span></a></li>
+					<li><a href="movies.php"><span>Movies</span></a></li>
+					<li><a href="shows.php"><span>Series</span></a></li>
 				</ul>
 			</nav>
 

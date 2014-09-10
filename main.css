@@ -1,23 +1,43 @@
 .movieContent{
 	background-color: #fcfcfc;
+	margin-bottom: 60px;
+
 }
 
 .movieContent ul{
 	list-style-type: none;
 	display: inline-block;
-	width: 720px;
+	width: 620px;
 	margin-top: 20px;
+	margin-left: 10px;
 }
 
 .movieContent li{
-	margin-bottom: 10px;
+	display: none;
+
+	height: 100px;
+	margin-bottom: 20px;
 	padding: 10px;
 	overflow: auto;
-	z-index: -2;
 
-	border: 1px solid black;
+	overflow: hidden;
+	position: relative;
+
+	background-color: white;
+	border-radius: 5px;
+
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	-moz-box-shadow: 0 10px 6px -6px #777;
+	box-shadow: 0 0px 6px 3px #777;
+
+  	
 }
 
+.movieContent li.removed-item{
+
+	-webkit-transition: all 550ms ease;
+	transition: all 550ms ease;
+}
 .movieContent li .movieListImage{
 	height: 100px;
 	width: 70px;
@@ -27,15 +47,60 @@
 
 .movieContent li .movieListTitle{
 	display: inline-block;
+	height: 60px;
+	width: 300px;
+	
+	position: absolute;
+	top: 30px;
+
+	font-size: 15px; 
 }
 
 .movieContent li .movieListRandY{
 	display: inline-block;
+	height: 60px;
+
+	position: absolute;
+	right: 140px;
+	top: 20px;
+
+	font-family: Helvetica, Arial, 'lucida grande',tahoma,verdana,arial,sans-serif;
+	font-size: 20px; 
+	line-height: 2;
+
+}
+.movieContent li .movieListRandY .fa{
+	color: #0f71ba;
 }
 
-.movieContent li .movieListRandY .movieListRating{
-	background-image: url(../star.png);
 
+.movieContent li .watchedMovieButton{
+	position: relative;
+	height: 60px;
+	width: 80px;
+	margin-top: 20px;
+
+	float: right;
+	font-size: 70px;
+
+
+	border: 0 none;
+	border-radius: 5px;
+
+	background: #0f71ba;
+    background: -webkit-linear-gradient(#3fa4f0 0%, #0f71ba 100%);
+    background: -o-linear-gradient(#3fa4f0 0%, #0f71ba 100%);
+    background: linear-gradient(#3fa4f0 0%, #0f71ba 100%);
+
+    cursor: pointer;
+	-webkit-transition: all 150ms ease;
+	transition: all 150ms ease;
+}
+
+.movieContent li .watchedMovieButton span{
+	position: absolute;
+	top: -8px;
+	left: 3px;
 }
 
 .movieContent .movieFilter{
@@ -48,4 +113,33 @@
 	margin-right: 10px; 
 
 	border: 1px solid black;
+}
+
+.movieContent .load{
+	height: 70px;
+	margin-bottom: 20px;
+	text-align: center;
+
+	/*background-color: rgba(175,175,174,1);*/
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.movieContent .load .loadButton{
+	font-size: 50px;
+	color: #0f71ba;
+	cursor: pointer;
+
+
+  	-webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.movieContent .load .loadButton:hover{
+	color: #3fa4f0;
+
+
 }
